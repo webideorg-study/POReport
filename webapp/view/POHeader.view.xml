@@ -1,0 +1,17 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="cl.POReport.controller.POHeader" displayBlock="true">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<List noDataText="Drop list items here" id="list0" items="{path:'/POHeaderSet',parameters:{select:'Ebeln,Bsart'}}">
+							<items>
+								<StandardListItem type="Navigation" title="{Ebeln}" description="{Bsart}" id="item0" press="GoToPOItem"/>
+							</items>
+						</List>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
